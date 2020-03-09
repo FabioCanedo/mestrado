@@ -1,0 +1,8 @@
+Para a realização desse trabalho utilizaremos geradores de eventos, que são essencialmente simuladores
+de colisões de íons pesados, para verificar os efeitos esperados das fragmentações de quarks pesados
+nos observáveis de subestrutura de jatos. Os programas que serão utilizados serão:
+
+\begin{itemize}
+ \item MUSIC\cite{noauthor_music_nodate}, que possui uma breve descrição na subseção \ref{music};
+ \item PYTHIA\cite{noauthor_pythia_nodate}, que constitui em um gerador de jatos, especificamente;
+\end{itemize}

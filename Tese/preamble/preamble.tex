@@ -1,0 +1,65 @@
+\usepackage{amssymb,amsmath}
+\usepackage{bbold}
+%\usepackage[brazilian]{babel}
+%\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{chngcntr}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage{indentfirst}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[title]{appendix}
+\usepackage{subfig}
+\usepackage{floatrow}
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\usepackage{mathtools}
+\usepackage{blindtext}
+\usepackage{imakeidx}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{chngcntr}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{times}
+\usepackage{enumerate}
+\usepackage{epigraph}
+
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+\numberwithin{figure}{chapter}
+\numberwithin{table}{chapter}
+%\counterwithout{figure}{subsection}
+%\counterwithout{table}{subsection}
+
+\makeatletter
+     \renewcommand*\l@figure{\@dottedtocline{1}{1em}{3.2em}}
+\makeatother
+
+\makeindex[columns=1]
+\pagestyle{fancy}
+\usetikzlibrary{trees}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.markings}
+
+\tikzset{
+    photon/.style={decorate, decoration={snake}, draw=black},
+    fermion/.style={draw=black, postaction={decorate}, 
+    decoration={markings,mark=at position .55 with {\arrow[scale=2,draw=black]{>}}}},
+    afermion/.style={draw=black, postaction={decorate}, 
+    decoration={markings,mark=at position .55 with {\arrow[scale=2,draw=black]{<}}}},
+    gluon/.style={decorate, draw=green,
+    decoration={coil,amplitude=4pt, segment length=5pt}} 
+    }
+
+
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+    
+\setlength{\parindent}{20pt}
+\DeclareMathOperator{\Tr}{Tr}

@@ -1,0 +1,39 @@
+
+
+HYDJET event generator
+
+Purpose
+
+HYDJET is event generator to simulate jet production, jet quenching and flow effects in ultrarelativistic heavy ion AA collisions
+Method
+
+This code is merging HYDRO (flow effects), PYTHIA6.4 (hard jet production) and PYQUEN (jet quenching).
+The development of HYDJET generator is HYDJET++ project.
+
+Documentation
+
+short description (text file)
+
+Source files
+
+main source file (fortran routine), version HYDJET1_9
+current update note for HYDJET 1.9 (1 July 2013)
+pyquen1_5.f
+current update note for PYQUEN 1.5 (6 May 2010)
+pythia-6.4.24.f.gz
+jetset_73.f with extended size of common block lujets
+example fortran routine
+
+download as zip-archive documentation and source files
+old version of HYDJET code (1.8)
+old version of HYDJET code (1.7)
+old version of HYDJET code (1.6)
+old version of HYDJET code (1.5)
+old version of HYDJET code (1.4)
+old version of HYDJET code (1.3)
+old version of HYDJET code (1.2)
+old version of HYDJET code (1.1)
+old version of HYDJET code (1.0)
+some plots obtained with HYDJET
+
+Last update: July 3, 2013 by Igor.Lokhtin@cern.ch

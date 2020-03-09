@@ -1,0 +1,31 @@
+Nesse problema, começamos com o funcional assumindo que os campos são uniformes no espaço, isso resulta em:
+
+\begin{equation}
+F[\phi(x),A(x)] = C \left( \frac{a}{2} |\phi|^2 + \frac{b}{4} |\phi|^4 +  \lambda |\phi|^2 A^2 \right)
+\end{equation}
+
+Agora, derivando em relação a $A$ e $\phi$, obtemos:
+
+\begin{subequations}
+\begin{align}
+\frac{\partial F}{\partial A} = 2\lambda |\phi|^2 A &= 0 \\
+\frac{\partial F}{\partial \phi^*} = \phi \left( \frac{a}{2} + \lambda A + \frac{b}{2}|\phi|^2\right) &=0
+\end{align}
+\end{subequations}
+
+Portanto, obtemos para $A=0$:
+
+\begin{equation}
+\phi = sqrt{-\frac{2a}{b}}
+\end{equation}
+
+Expandindo ao redor do mínimo($\phi = -\frac{2a}{b} + v(x)$) e mantendo apenas termos de ordem no máximo quadrática, obtemos:
+
+\begin{equation}
+\begin{split}
+F[\phi(x),A(x)] &= \int \mathbf{d}^d x |\triangledown \phi|^2 + \frac{a}{2} |\phi|^2 + \frac{b}{4} |\phi|^4 + (\triangledown A)^2 + \lambda |\phi|^2 A^2 \\
+&= \int \mathbf{d}^d x |\triangledown v|^2 + \frac{a}{2} v^2 + (\triangledown A)^2 + \lambda \sqrt{\frac{-2a}{b}} A^2
+\end{split}
+\end{equation}
+
+O que desacopla os campos dando massa ao campo $A$.

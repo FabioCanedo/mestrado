@@ -1,0 +1,334 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>PYTHIA webpage</title>
+<link rel="stylesheet" type="text/css" href="present_data/pythia.css">
+<link rel="icon" type="image/gif" href="http://home.thep.lu.se/%7Etorbjorn/pythiaaux/pythia32.gif">
+</head>
+
+
+<body><h2>Present program version: PYTHIA 8.2</h2>
+
+While the release of PYTHIA 8.100 marked a clear break with the 
+Fortran-based PYTHIA 6.4, the introduction of PYTHIA 8.2 follows 
+the path of gradual evolution. That is, the new version does involve
+several new features, and some backwards incompatibilities, but not
+anything really dramatic. User-written programs that worked with 8.186 
+are also likely to work with 8.200, or at most require modest adjustments. 
+  
+<p>
+Given the low threshold, we expect the advantages with the new 
+version to be sufficiently large that the transition should 
+happen rapdily. However, should the need arise, a bug update 
+could still be issued for the 8.1 series. 
+
+</p><p>
+The structure of this webpage closely follows the 8.1 one, but does not 
+copy all of the <a href="http://home.thep.lu.se/%7Etorbjorn/pythiaaux/recent.html">useful material</a> on it, 
+so do have a look e.g. for interesting presentations and special tutorials. 
+
+</p><p>
+Look <a href="http://home.thep.lu.se/%7Etorbjorn/pythiaaux/contact.html">here</a> for information on how to obtain 
+new version alerts, how to contact us and how you can help us further 
+develop PYTHIA. 
+
+</p><p>
+See the <a href="http://home.thep.lu.se/%7Etorbjorn/pythiaaux/introduction.html">Introduction</a> for remarks on the 
+<a href="http://vincia.hepforge.org/" target="_top">VINCIA</a> and 
+<a href="http://direforpythia.hepforge.org/" target="_top">DIRE</a> 
+shower plugins.
+
+</p><h3>Installation</h3>
+
+To get going with the program, do the following (on a Linux or Mac OS X 
+system):
+<ul>
+<li> Download the file
+<code><a href="http://home.thep.lu.se/%7Etorbjorn/pythia8/pythia8230.tgz" target="_top">pythia8230.tgz</a></code> to a suitable location.
+</li><li> Unzip and expand it with <code>tar xvfz pythia8230.tgz</code>.
+</li><li> Move to the thus created <code>pythia8230</code> directory.
+</li><li> Read the <code>README</code> file in it for installation 
+instructions, and apply them.
+<br> (If you are not going to link any external libraries, or have
+any other special demands, you only need to type <code>make</code>.)
+</li><li> Move to the <code>examples</code> subdirectory and read the 
+<code>README</code> file there for instructions how to do some 
+test runs.
+<br> (Again, if you do not link to external libraries, you only need 
+to type <code>make mainNN</code> followed by 
+<code>./mainNN &gt; outNN</code>, where <code>NN</code> is 
+a two-digit number in the range 01 - 30.) 
+</li></ul>
+
+<h3>Documentation</h3>
+
+All necessary information how to run the program is available in 
+subdirectories of the <code>pythia8230</code> directory you unpacked 
+above, and copies of them are also linked here.
+
+<ul>
+<li> Study 
+<a href="http://home.thep.lu.se/%7Etorbjorn/pdfdoc/pythia8200.pdf" target="_top"><b>An Introduction to PYTHIA 8.2</b></a>, 
+available in <code>pythia8230/share/Pythia8/pdfdoc/pythia8200.pdf</code>, 
+for an overview. This article, in arXiv:1410.3012 [hep-ph], has been
+published in Comput. Phys.Commun. 191 (2015) 159. 
+<p>
+</p></li><li> The current 
+<a href="http://home.thep.lu.se/%7Etorbjorn/pythia82html/Welcome.html" target="_top"><b>online HTML manual</b></a> can be accessed if you  
+open the <code>pythia8230/share/Pythia8/htmldoc/Welcome.html</code> 
+file in a web browser.
+<p>
+</p></li><li> Alternatively, the current 
+<a href="http://home.thep.lu.se/%7Etorbjorn/pythia82php/Welcome.php" target="_top"><b>online PHP manual</b></a> contains the same text,
+but additionally offers a simple graphical-user-interface, with which  
+you can save a file with the settings you want to use in a run.
+You first have to move the <code>pythia8230/share/Pythia8/phpdoc</code> 
+subdirectory so that it is accessed by a webserver (like your homepage is), 
+and then open <code>pythia8230/share/Pythia8/phpdoc/Welcome.php</code> 
+in a web browser. You also have to ensure that you have write access to 
+the <code>phpdoc/files</code> subdirectory.
+<p>
+</p></li><li> The 
+<a href="http://home.thep.lu.se/%7Etorbjorn/pythia82html/UpdateHistory.html">
+Update History</a> forms an integral part of the manual.
+<p>
+</p></li><li> So does the  
+<a href="http://home.thep.lu.se/%7Etorbjorn/pythia82html/SampleMainPrograms.html">
+description of existing main programs</a>, which offers many hints how to 
+address various programming issues.
+<p>
+</p></li><li> A 
+<a href="http://home.thep.lu.se/%7Etorbjorn/doxygen/index.html">
+<b>Doxygen representation of the code</b></a> is available. It offers 
+a quick way to look up classes and methods, but is not a replacement 
+for the manual.
+<p>
+</p></li><li> The distribution also comes with a  
+<a href="http://home.thep.lu.se/%7Etorbjorn/pdfdoc/worksheet8200.pdf" target="_top"><b>PYTHIA 8.2 Worksheet</b></a>, 
+<br>primarily intended for summer schools, but also suitable for 
+self-study, to get going.
+<br>For the merging study the option exists to download larger LHE files
+than come with the standard PYTHIA distribution:
+<br><a href="http://home.thep.lu.se/%7Etorbjorn/pythia8/wp_tree_0.lhe.gz" target="_top">wp_tree_0.lhe.gz</a> 
+<br><a href="http://home.thep.lu.se/%7Etorbjorn/pythia8/wp_tree_1.lhe.gz" target="_top">wp_tree_1.lhe.gz</a> 
+<br><a href="http://home.thep.lu.se/%7Etorbjorn/pythia8/wp_tree_2.lhe.gz" target="_top">wp_tree_2.lhe.gz</a> 
+<br><a href="http://home.thep.lu.se/%7Etorbjorn/pythia8/wp_tree_3.lhe.gz" target="_top">wp_tree_3.lhe.gz</a> 
+<br><a href="http://home.thep.lu.se/%7Etorbjorn/pythia8/wp_tree_4.lhe.gz" target="_top">wp_tree_4.lhe.gz</a> 
+</li></ul>
+
+In addition, the complete <a href="http://home.thep.lu.se/%7Etorbjorn/pythia6/lutp0613man2.pdf" target="_top">
+PYTHIA 6.4 Physics and Manual</a> is still relevant for most of the
+physics in 8.2, and 
+<a href="http://home.thep.lu.se/%7Etorbjorn/pythia8/pythia8100.pdf" target="_top">A Brief Introduction to PYTHIA 8.1</a> may also contain 
+some useful material, although some of it is superseded by the current
+<a href="http://home.thep.lu.se/%7Etorbjorn/pdfdoc/pythia8200.pdf" target="_top">An Introduction to PYTHIA 8.2</a>.
+
+<h3>Recent presentations</h3>
+
+<ul>
+
+<p></p><li>  
+<strong>  
+<a href="http://home.thep.lu.se/%7Etorbjorn/talks/Mrenna17Tools0.pdf" target="_top">PYTHIA 8 Bootcamp:</a>
+<a href="http://home.thep.lu.se/%7Etorbjorn/talks/Mrenna17Tools1.pdf" target="_top">Part 1</a> -
+<a href="http://home.thep.lu.se/%7Etorbjorn/talks/Mrenna17Tools2.pdf" target="_top">Part 2</a> -
+<a href="http://home.thep.lu.se/%7Etorbjorn/talks/Mrenna17Tools3.pdf" target="_top">Part 3</a>
+</strong> 
+<br>presented by Stephen Mrenna at the Dartmouth-TRIUMF-University of 
+Washington High-Energy Physics/Cosmology Tools Bootcamp, 
+23-27 October 2017
+
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/cern17hi.pdf" target="_top">
+The Lund Model and some extensions</a></strong> 
+<br>presented by Torbjörn Sjöstrand at the workshop on 
+Collective effects in small collisions systems, CERN, 15 June 2017
+
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/HeleniusPhoton17.pdf" target="_top">
+Photon-photon and photon-hadron processes in PYTHIA 8</a></strong> 
+<br>presented by Ilkka Helenius at Photon 2017, CERN, 
+22-26 May 2017
+
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/DesaiMC4BSM17.pdf" target="_top">
+BSM with Pythia 8</a></strong> 
+<br>presented by Nishita Desai at the
+MC4BSM 2017 Workshop, SLAC, 11-13 May 2017
+
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/BierlichMCWS17.pdf" target="_top">
+Underlying Event and Hadronization in DIPSY and Pythia 8</a></strong> 
+<br>presented by Christian Bierlich at the
+ATLAS-CMS Monte Carlo Generators Workshop, CERN, 2-5 May 2017
+
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/PrestelMCWS17.pdf" target="_top">
+Showering options</a></strong> 
+<br>presented by Stefan Prestel at the
+ATLAS-CMS Monte Carlo Generators Workshop, CERN, 2-5 May 2017
+
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/cern17mcws.pdf" target="_top">
+Status of PYTHIA 8</a></strong> 
+<br>presented by Torbjörn Sjöstrand at the
+ATLAS-CMS Monte Carlo Generators Workshop, CERN, 2-5 May 2017
+
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/Mrenna17.pdf" target="_top">
+Status of the PYTHIA8 Event Generator</a></strong> 
+<br>presented by Stephen Mrenna at the Pittsburgh Particle physics 
+Astrophysics and Cosmology Center, University of Pittsburgh,
+13 April 2017
+
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/SkandsMCnet16.pdf" target="_top">
+Pythia Overview : 2013-2016</a></strong> 
+<br>presented by Peter Skands at the MCnet meeting at CERN, 
+23-25 November 2016
+
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/HeleniusMCnet16.pdf" target="_top">
+Photon-photon interactions in e+e- collisions with PYTHIA 8</a></strong> 
+<br>presented by Ilkka Helenius at the MCnet meeting at CERN, 
+23-25 November 2016
+
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/FischerMCnet16.pdf" target="_top">
+Thermodynamical String Fragmentation</a></strong> 
+<br>presented by Nadine Fischer at the MCnet meeting at CERN, 
+23-25 November 2016
+    
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/cern16fcc.pdf" target="_top">
+Colour Reconnections from LEP to Future Colliders</a></strong>
+<br>presented by Torbjörn Sjöstrand at Parton Radiation 
+and Fragmentation from LHC to FCC-ee workshop, CERN, 21-22 November 2016
+
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/PrestelHeavyFlavours16.pdf" target="_top">
+Heavy flavour in showers only</a></strong> (in Pythia 8)
+<br>presented by Stefan Prestel at the workshop on Heavy Flavour 
+Production at the LHC, IPPP Durham, 21 April 2016
+
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/RasmussenMCnet16.pdf" target="_top">
+Cross sections and diffraction in PYTHIA 8</a></strong> 
+<br>presented by Christine Rasmussen at the MCnet meeting in 
+Göttingen, 4-6 April 2016
+
+<p></p></li><li>       
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/HeleniusFCCee16.pdf" target="_top">
+Photon-photon interactions with PYTHIA8: Current status and future plans
+</a></strong>
+<br>presented by Ilkka Helenius at the FCC-ee mini-workshop on
+Physics Behind Precision, CERN, 2 February 2016
+
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/MrennaCERN16.pdf" target="_top">
+Pythia8 Status Report</a></strong>
+<br>presented by Stephen Mrenna at ATLAS-CMS Monte Carlo Generators
+Workshop, CERN, 11 January 2016
+     
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/HeleniusMPILHC15.pdf" target="_top">
+Recent PYTHIA 8 developments: Hard diffraction, Colour reconnection
+and γγ collisions</a></strong>
+<br>presented by Ilkka Helenius at MPI@LHC, Trieste, Italy,
+23 November 2015
+     
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/ChristiansenCoffee15.pdf" target="_top">
+Colour Reconnection and Weak Showers</a></strong>
+<br>presented by Jesper Roy Christiansen, Science Coffee, Lund,
+5 November 2015
+
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/Skands100TeV15.pdf" target="_top">
+Updated PYTHIA Forecasts for 100 TeV</a></strong>
+<br>presented by Peter Skands at the Workshop on QCD, EW and Tools
+at 100 TeV, CERN, 7-9 October 2015
+
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/RasmussenISMD15.pdf" target="_top">
+Hard Diffraction in PYTHIA 8</a></strong>
+<br>presented by Christine Rasmussen at XLV International Symposium on
+Multiparticle Dynamics, 5 October 2015
+
+<p></p></li><li>       
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/HeleniusMCnet15.pdf" target="_top">
+Photon-photon collisions with PYTHIA8
+</a></strong>
+<br>presented by Ilkka Helenius at the MCnet meeting at CERN, 
+24 September 2015
+
+<p></p></li><li>  
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/RasmussenBlois15.pdf" target="_top">
+Hard Diffraction in PYTHIA8</a></strong>
+<br>presented by Christine Rasmussen at Blois conference on elastic and 
+diffractive scattering, 2 July 2015
+
+<p></p></li><li>       
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/HeleniusPhoton15.pdf" target="_top">
+Monte Carlo event generation of photon-photon collisions at colliders
+</a></strong>
+<br>presented by Ilkka Helenius at Photon 2015, 18 June 2015
+
+<p></p></li><li>       
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/ChristiansenKrakow14.pdf" target="_top">
+A new Colour Reconnection model within PYTHIA</a></strong>
+<br>presented by Jesper Roy Christiansen at MPI@LHC, Krakow, 
+3-7 November 2014
+    
+<p></p></li><li>       
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/krakow14.pdf" target="_top">
+MPI in PYTHIA</a></strong>
+<br>presented by Torbjörn Sjöstrand at MPI@LHC 2014, Krakow, 
+3-7 November 2014
+
+<p></p></li><li>       
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/ChristiansenKarlsruhe14.pdf" target="_top">
+A new Colour Reconnection model within PYTHIA</a></strong>
+<br>presented by Jesper Roy Christiansen at at the MCnet meeting 
+in Karlsruhe, 9 October 2014
+
+<p></p></li><li>       
+<strong><a href="http://home.thep.lu.se/%7Etorbjorn/talks/ArgyropoulosKarlsruhe14.pdf" target="_top">
+Colour Reconnection in ttbar final states at the LHC</a></strong>
+<br>presented by Spyridon Argyropoulos at at the MCnet meeting 
+in Karlsruhe, 9 October 2014
+
+</li></ul>
+
+<h3>Earlier versions</h3>
+
+Normally there should be no reason now to install an older, obsolete version. 
+<br>However, for backwards checks, this might be required, 
+so here are the previous ones:
+<ul>
+<li><code><a href="http://home.thep.lu.se/%7Etorbjorn/pythia8/pythia8200.tgz" target="_top">
+pythia8200.tg</a></code>
+</li><li><code><a href="http://home.thep.lu.se/%7Etorbjorn/pythia8/pythia8201.tgz" target="_top">
+pythia8201.tgz</a></code>
+</li><li><code><a href="http://home.thep.lu.se/%7Etorbjorn/pythia8/pythia8204.tgz" target="_top">
+pythia8204.tgz</a></code>
+</li><li><code><a href="http://home.thep.lu.se/%7Etorbjorn/pythia8/pythia8205.tgz" target="_top">
+pythia8205.tgz</a></code>
+</li><li><code><a href="http://home.thep.lu.se/%7Etorbjorn/pythia8/pythia8209.tgz" target="_top">
+pythia8209.tgz</a></code>
+</li><li><code><a href="http://home.thep.lu.se/%7Etorbjorn/pythia8/pythia8210.tgz" target="_top">
+pythia8210.tgz</a></code>
+</li><li><code><a href="http://home.thep.lu.se/%7Etorbjorn/pythia8/pythia8212.tgz" target="_top">
+pythia8212.tgz</a></code>
+</li><li><code><a href="http://home.thep.lu.se/%7Etorbjorn/pythia8/pythia8215.tgz" target="_top">
+pythia8215.tgz</a></code>
+</li><li><code><a href="http://home.thep.lu.se/%7Etorbjorn/pythia8/pythia8219.tgz" target="_top">
+pythia8219.tgz</a></code>
+</li><li><code><a href="http://home.thep.lu.se/%7Etorbjorn/pythia8/pythia8223.tgz" target="_top">
+pythia8223.tgz</a></code>
+</li><li><code><a href="http://home.thep.lu.se/%7Etorbjorn/pythia8/pythia8226.tgz" target="_top">
+pythia8226.tgz</a></code>
+</li></ul>
+
+
+
+</body></html>

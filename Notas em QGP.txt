@@ -1,0 +1,13 @@
+Artigo de Andrade, Noronha e Denicol:
+-Eles estudam o efeito dos jatos na hidrodinâmica do QGP através
+de um termo fonte na equação de consercação do tensor energia-momento;
+-Este termo fonte consiste de um gerador de jatos que é porporcional à razão da entropia
+calculada na posição em que o jato é criado, e uma entropia de referência(?);
+-Também proporcional à um parâmetro de perda de energia do jato, este considerado livre;
+-Os modelos utilizados na simulação incluem:
+	-Modelo Monte Carlo de Glauber para geração das condições iniciais;
+	-A posição inicial do dijato é selecionada de acordo com um modelo proposto pelos próprios autores;
+	-Energia inicial do dijato escolhida de acordo com dados de colisões p-p propriamente normalizadas para Au-Au;
+	-Evolução do QGP é integrada através do método SPH(Pesquisar);
+	-O espectro final é calculado usando o método(?) de Cooper-Frye;
+-Todo o processo é realizado para uma amostra de 1000 eventos, destes 750 não produzem dijatos e 250 produzem;

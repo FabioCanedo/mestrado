@@ -1,0 +1,73 @@
+Nesse problema, temos que minimizar a equação:
+
+\begin{equation}
+f(m) = \frac{a}{2} m^2 + \frac{b}{4} m^4 + \frac{c}{6} m^6
+\end{equation}
+
+Derivando esta em relação a $m$ e igualando a $0$, obtemos:
+
+\begin{equation}
+a m + b m^3 + c m^5 = 0
+\end{equation}
+
+Cujas soluções são:
+
+\begin{subequations}
+\begin{align}
+m &= 0 \\
+m &= \sqrt{\frac{-b \pm \sqrt{b^2 - 4ac}}{2c}} \\
+m &= -\sqrt{\frac{-b \pm \sqrt{b^2 - 4ac}}{2c}}
+\end{align}
+\label{sols}
+\end{subequations}
+
+Isso implica na condição para as soluções que:
+
+\begin{equation}
+a > a_0 =\frac{b^2}{4c}
+\end{equation}
+
+Mas temos, também, a condição:
+
+\begin{equation}
+\frac{\partial^2 f}{\partial m^2} \geq 0
+\label{second_deriv}
+\end{equation}
+
+O que leva a:
+
+\begin{equation}
+a + 3 b m^{2} + 5 c m^{4} \geq 0
+\label{mincond}
+\end{equation}
+
+
+Além disso para que a solução seja de fato um mínimo global, teremos:
+
+\begin{equation}
+f(m) < 0
+\end{equation}
+
+Para que a solução $m=0$ não seja mínimo global. Dessa maneira, substituímos a solução com sinal adequado, ou seja, positivo dentro da raíz. Assim, obtemos:
+
+\begin{equation}
+\begin{split}
+a + \frac{b}{2} m^2 + \frac{c}{3} m^4 &< 0 \\
+\left( a+bm^2+cm^4 \right) + -\frac{b}{2}m^2 -\frac{2}{3}cm^4 &< 0 \\
+-\frac{b}{2} &< \frac{2}{3} cm^2 \\
+-\frac{3b}{4c} &< m^2 \\
+-\frac{3b}{4c} &< \frac{-b-\sqrt{b^2-4ac}}{2c} \\
+-\frac{b}{2} &< \sqrt{b^2-4ac} \\
+\frac{b^2}{4} &< b^2 - 4ac \\
+a < a_1 &= \frac{3b^2}{16c}
+\end{split}
+\label{p1_cond}
+\end{equation}
+
+A solução $m=0$, combinada com a condição \eqref{second_deriv}, nos leva a:
+
+\begin{equation}
+a \geq 0
+\end{equation}
+
+Mostrando que é necessário que $a<0$ para que haja esse mínimo local.

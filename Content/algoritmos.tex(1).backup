@@ -1,0 +1,24 @@
+\subsection{Algoritmos de {\it Jet Clustering}}
+
+Para analisar jatos produzidos em colisões de HI(íons pesados), precisamos definir como
+os jatos serão extraídos dos eventos. Os métodos utilizados para isto são os algoritmos
+de {\it jet clustering}. Estes podem ser classificados em esquemas gerais dependendo de
+métodos em partes específicas do {\it clustering}. Por exemplo:
+
+\begin{description}
+ \item[IC-PR] são os algoritmos de cones interativos de remossão progressiva, isso
+ quer dizer que eles mudam a direção do cone a cada interação e retiram os jatos um de
+ cada vez;
+ \item[FC-PR] são semelhantes aos {\bf IC-PR}, mas as direções dos cones são fixas ao redor
+ da semente;
+ \item[IC-SM] são os algoritmos que utilizam cones iterativos, mas não removem os cones
+ estáveis, para lidar com \emph{overlapping}, utiliza-se métodos que envolvem atribuir cada
+ partícula ao jato mais próximo ou simplesmente juntar os dois jatos, baseando-se na fração
+ da quantidade de energia que o jato menos intenso que está na região de \emph{overlapping};
+ \item[IC-SD] aplicam o \emph{split and drop}, ou seja, ele não une jatos que dividem muita
+ energia em comum, mas simplesmente desconsideram os jatos menos intensos;
+ \item[SR] são uma classe de algoritmos que combinam partículas({\it Sequential Recombination}) em jatos baseando-se
+ em uma metrica pŕe-definida, que é o caso do {\it $k_T$ algorithm};
+\end{description}
+
+Alguns requisitos que esses algoritmos devem satisfazer são 

@@ -1,0 +1,74 @@
+      PROGRAM INTEGRATE
+
+      IMPLICIT NONE
+      COMMON/MEDPARAM/CENTRMIN,CENTRMAX,BREAL,CENTR,RAU,
+     & TPROFILE(100,100),NF
+      COMMON/logfile/logfid
+      COMMON/MEDFILEC/MEDFILE
+      
+      CALL MYMED
+
+
+
+      END PROGRAM
+
+      SUBROUTINE MYMED()
+      IMPLICIT NONE
+      COMMON/MEDPARAM/CENTRMIN,CENTRMAX,BREAL,CENTR,RAU,
+     & TPROFILE(100,100),NF
+      COMMON/logfile/logfid
+      COMMON/MEDFILEC/MEDFILE
+      CHARACTER*80 MEDFILE
+      INTEGER logfid
+      INTEGER NF
+      DOUBLE PRECISION CENTRMIN,CENTRMAX,BREAL,CENTR,RAU,
+     & TPROFILE 
+      CHARACTER A(1700)
+      DOUBLE PRECISION Y(100,100)
+      DOUBLE PRECISION X(100)
+      INTEGER I
+C-----10    write(*,*) MEDFILE
+     
+
+      OPEN(10,FILE='mymed/0_10.dat')
+      DO 5 I=1,8
+1         READ(10,'(1700A)') A(1:)
+5     CONTINUE
+       
+          DO 20 I = 1,100
+              READ(10,*) X
+              Y(I,:)=X
+20        CONTINUE
+
+      TPROFILE=Y
+
+      END
+
+      DOUBLE PRECISION FUNCTION INTEG(TPROF)
+      IMPLICIT NONE
+      DOUBLE PRECISION TPROF,XMAX,XMIN,YMAX,YMIN
+      DOUBLE PRECISION INTEG,TERM
+      DOUBLE PRECISION INTERMED(100)
+      INTEGER N,I,J
+      XMAX=10.
+      XMIN=-10.
+      YMAX=10.
+      YMIN=-10.
+      N=FLOOR(MAX((XMAX-XMIN+2*STEP)/(2*STEP),0.))
+      INTEG=0.
+      DO 10 I=1,N
+          TERM=0.
+          INTERMED(I)=0.
+          DO 20 J=1,N
+              TERM=(STEP/3)*(TPROF(I,J)+TPROF(I,J+2)
+     &        +4*TPROF(I,J+1))
+              INTERMED(I)=INTERMED(I)+TERM
+20        CONTINUE
+10    CONTINUE
+      TERM=0.
+      DO 10 I=1,N
+          TERM=(STEP/3)*(INTERMED(I)+INTERMED(I+2)
+     &    +4*INTERMED(I+1))
+          INTEG=INTEG+TERM
+10    CONTINUE
+      END

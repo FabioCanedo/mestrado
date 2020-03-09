@@ -1,0 +1,54 @@
+
+Loading [MathJax]/extensions/TeX/AMSsymbols.js
+Cornell University
+Cornell University Library
+We gratefully acknowledge support from
+the Simons Foundation
+and member institutions
+arXiv.org > hep-ph > arXiv:1004.1408
+( Help | Advanced search )
+Full-text links:
+Download:
+
+    PDF
+    PostScript
+    Other formats
+
+( license )
+Current browse context:
+hep-ph
+< prev  |  next >
+new  | recent  | 1004
+Change to browse by:
+nucl-ex
+nucl-th
+References & Citations
+
+    INSPIRE HEP
+    ( refers to | cited by )
+    NASA ADS
+
+Bookmark
+( what is this? )
+CiteULike logo BibSonomy logo Mendeley logo del.icio.us logo Digg logo Reddit logo ScienceWISE logo
+High Energy Physics - Phenomenology
+Title: 3+1D hydrodynamic simulation of relativistic heavy-ion collisions
+Authors: Bjoern Schenke , Sangyong Jeon , Charles Gale
+(Submitted on 8 Apr 2010 ( v1 ), last revised 20 Jul 2010 (this version, v2))
+
+    Abstract: We present MUSIC, an implementation of the Kurganov-Tadmor algorithm for relativistic 3+1 dimensional fluid dynamics in heavy-ion collision scenarios. This Riemann-solver-free, second-order, high-resolution scheme is characterized by a very small numerical viscosity and its ability to treat shocks and discontinuities very well. We also incorporate a sophisticated algorithm for the determination of the freeze-out surface using a three dimensional triangulation of the hyper-surface. Implementing a recent lattice based equation of state, we compute p_T-spectra and pseudorapidity distributions for Au+Au collisions at root s = 200 GeV and present results for the anisotropic flow coefficients v_2 and v_4 as a function of both p_T and pseudorapidity. We were able to determine v_4 with high numerical precision, finding that it does not strongly depend on the choice of initial condition or equation of state. 
+
+Comments: 	16 pages, 11 figures, version accepted for publication in PRC, references added, minor typos corrected, more detailed discussion of freeze-out routine added
+Subjects: 	High Energy Physics - Phenomenology (hep-ph) ; Nuclear Experiment (nucl-ex); Nuclear Theory (nucl-th)
+Journal reference: 	Phys.Rev.C82:014903,2010
+DOI : 	10.1103/PhysRevC.82.014903
+Cite as: 	arXiv:1004.1408 [hep-ph]
+  	(or arXiv:1004.1408v2 [hep-ph] for this version)
+Submission history
+From: Björn Schenke [ view email ]
+[v1] Thu, 8 Apr 2010 19:54:32 GMT (80kb)
+[v2] Tue, 20 Jul 2010 15:59:44 GMT (81kb)
+Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )
+
+Link back to: arXiv , form interface , contact .
+Twitter

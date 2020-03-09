@@ -1,0 +1,110 @@
+Nesse problema, existem dois tipos de transformações que são realizadas no sistema, estas são as isotérmicas e as adiabáticas. Vamos, em primeiro lugar, estabelecer o calor e o trabalho realizado pelo sistema em casa transformação. Começemos pela adiabática. Nesse caso, o calor trocado é $Q=0$. Teremos então, pela primeira lei da termodinâmica:
+
+\begin{equation}
+W = - \Delta U
+\end{equation}
+
+Mas temos também, que:
+
+\begin{equation}
+\begin{split}
+\Delta U &= \langle H \rangle_f - \langle H \rangle_i \\
+\Delta U &= \frac{\omega_f}{\omega_i} \langle H \rangle_i - \langle H \rangle_i \\
+\Delta U &= \left( \frac{\omega_f - \omega_i}{\omega_i} \right) \langle H \rangle_i \\
+\Delta U &= \left( \frac{\omega_f - \omega_i}{\omega_i} \right) \frac{\omega_i}{2} \coth \left( \frac{\omega_i}{2 T_i} \right) \\
+\Delta U &= \left( \frac{\omega_f - \omega_i}{2} \right) \coth \left( \frac{\omega_i}{2 T_i} \right)
+\end{split}
+\end{equation}
+
+Logo:
+
+\begin{equation}
+W = \left( \frac{\omega_i - \omega_f}{2} \right) \coth \left( \frac{\omega_i}{2 T_i} \right)
+\end{equation}
+
+Agora, para o caso isotérmico, é melhor utilizarmos a variação da energia livre, pois temos:
+
+\begin{equation}
+d F = S d T - W \ln x
+\end{equation}
+
+Portanto, em uma transformação isotérmica, teremos a seguinte relação:
+
+\begin{equation}
+\begin{split}
+W &= - \Delta F \\
+W &= - T \left\{ \ln \sinh \left( \frac{\omega_f}{2 T} \right) - \ln \sinh \left( \frac{\omega_i}{2 T} \right) \right\} \\
+W &= - T \left\{ \ln \left[ \sinh \left( \frac{\omega_f}{2 T} \right) \Big/ \sinh \left( \frac{\omega_i}{2 T} \right) \right] \right\}
+\end{split}
+\end{equation}
+
+Podemos, portanto estabelecer os valores para cada transformação:
+
+\begin{itemize}
+\item $W_{ab} = - T_H \left\{ \ln \left[ \sinh \left( \frac{\omega_b}{2 T_H} \right) \Big/ \sinh \left( \frac{\omega_a}{2 T_H} \right) \right] \right\}$;
+\item $W_{bc} = \left( \frac{\omega_b - \omega_c}{2} \right) \coth \left( \frac{\omega_b}{2 T_H} \right)$;
+\item $W_{cd} = - T_C \left\{ \ln \left[ \sinh \left( \frac{\omega_d}{2 T_C} \right) \Big/ \sinh \left( \frac{\omega_c}{2 T_C} \right) \right] \right\}$;
+\item $W_{da} = \left( \frac{\omega_d - \omega_a}{2} \right) \coth \left( \frac{\omega_d}{2 T_C} \right)$;
+\end{itemize}
+
+Para o calor de cada processo, teremos:
+
+\begin{itemize}
+\item $Q_{ab} = \frac{\omega_b}{2} \coth \left( \frac{\omega_b}{2T_H} \right) - \frac{\omega_a}{2} \coth \left( \frac{\omega_a}{2T_H} \right) - T_H \left\{ \ln \left[ \sinh \left( \frac{\omega_b}{2 T_H} \right) \Big/ \sinh \left( \frac{\omega_a}{2 T_H} \right) \right] \right\}$;
+\item $Q_{bc} = 0$;
+\item $Q_{cd} = \frac{\omega_d}{2} \coth \left( \frac{\omega_d}{2T_C} \right) - \frac{\omega_c}{2} \coth \left( \frac{\omega_c}{2T_C} \right) - T_C \left\{ \ln \left[ \sinh \left( \frac{\omega_d}{2 T_C} \right) \Big/ \sinh \left( \frac{\omega_c}{2 T_C} \right) \right] \right\}$;
+\item $Q_{da} = 0$;
+\end{itemize}
+
+Podemos, portanto, computar a eficiência:
+
+\begin{equation}
+\begin{split}
+\eta &= \Bigg\{- T_H \left\{ \ln \left[ \sinh \left( \frac{\omega_b}{2 T_H} \right) \Big/ \sinh \left( \frac{\omega_a}{2 T_H} \right) \right] \right\} \\& + \left( \frac{\omega_b - \omega_c}{2} \right) \coth \left( \frac{\omega_b}{2 T_H} \right) \\& - T_C \left\{ \ln \left[ \sinh \left( \frac{\omega_d}{2 T_C} \right) \Big/ \sinh \left( \frac{\omega_c}{2 T_C} \right) \right] \right\} \\& + \left( \frac{\omega_d - \omega_a}{2} \right) \coth \left( \frac{\omega_d}{2 T_C} \right) \Bigg\} \Bigg\{ \frac{\omega_b}{2} \coth \left( \frac{\omega_b}{2T_H} \right) - \frac{\omega_a}{2} \coth \left( \frac{\omega_a}{2T_H} \right) \\& - T_H \left\{ \ln \left[ \sinh \left( \frac{\omega_b}{2 T_H} \right) \Big/ \sinh \left( \frac{\omega_a}{2 T_H} \right) \right] \right\} \Bigg\}^{-1}
+\end{split}
+\end{equation}
+
+Essa expressão pode ser simplificada, percebendo que os parâmetros têm algumas relações, por exemplo, em relação às transformações adiabáticas, temos:
+
+\begin{equation}
+\begin{split}
+\frac{\langle H \rangle_f}{\omega_f} &= \frac{\langle H \rangle_i}{\omega_i} \\
+\coth \left( \frac{\omega_f}{2T_f} \right) &= \coth \left( \frac{\omega_f}{2T_f} \right) \\
+\frac{\omega_f}{T_f} &= \frac{\omega_i}{T_i}
+\end{split}
+\end{equation}
+
+Definimos, portanto, as variáveis:
+
+\begin{subequations}
+\begin{align}
+r &= \frac{\omega_c}{T_C} = \frac{\omega_b}{T_H} \\
+p &= \frac{\omega_d}{T_C} = \frac{\omega_a}{T_H} \\
+\alpha &= \frac{T_C}{T_H} = \frac{\omega_d}{\omega_a} = \frac{\omega_c}{\omega_b}
+\end{align}
+\label{rpalpha}
+\end{subequations}
+
+Portanto, a eficiência fica:
+
+\begin{equation}
+\begin{split}
+\eta &= \Bigg\{- \left\{ \ln \left[ \sinh \left( \frac{r}{2} \right) \Big/ \sinh \left( \frac{p}{2} \right) \right] \right\} \\& + \left( r \frac{1 - \alpha }{2} \right) \coth \left( \frac{r}{2} \right) \\& - \alpha \left\{ \ln \left[ \sinh \left( \frac{p}{2} \right) \Big/ \sinh \left( \frac{r}{2} \right) \right] \right\} \\& + \left( p \frac{\alpha - 1}{2} \right) \coth \left( \frac{p}{2} \right) \Bigg\} \Bigg\{ \frac{r}{2} \coth \left( \frac{r}{2} \right) - \frac{p}{2} \coth \left( \frac{p}{2} \right) \\& - \left\{ \ln \left[ \sinh \left( \frac{r}{2} \right) \Big/ \sinh \left( \frac{p}{2} \right) \right] \right\} \Bigg\}^{-1}
+\end{split}
+\end{equation}
+
+Que pode ser reescrita como:
+
+\begin{equation}
+\begin{split}
+\eta &= \Bigg\{ \ln \left( \sinh \left( \frac{p}{2} \right) \bigg/ \sinh \left( \frac{r}{2} \right) \right)^{1-\alpha} \\&+ \left( r \frac{1 - \alpha }{2} \right) \coth \left( \frac{r}{2} \right) + \left( p \frac{\alpha - 1}{2} \right) \coth \left( \frac{p}{2} \right) \Bigg\} \Bigg\{ \frac{r}{2} \coth \left( \frac{r}{2} \right) - \frac{p}{2} \coth \left( \frac{p}{2} \right) \\& - \left\{ \ln \left[ \sinh \left( \frac{r}{2} \right) \Big/ \sinh \left( \frac{p}{2} \right) \right] \right\} \Bigg\}^{-1}
+\end{split}
+\end{equation}
+
+E, por fim, podemos simplificá-la para:
+
+\begin{equation}
+\eta = 1-\alpha
+\end{equation}
+
+As condições estabelecidas sobre os parâmetros para a obtenção dessa eficiência são as relações mostradas nas Equações \eqref{rpalpha}. Elas vêm do fato de que estamos assumindo o teorema adiabático de processos quasi-estáticos. Isso nos permitiu conectar os trabalhos dos processos adiabáticos do ciclo em um único logaritmo, permitindo toda a simplificação realizada.

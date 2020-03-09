@@ -1,0 +1,109 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[a4paper,top=3cm,left=3cm,right=2cm,bottom=2cm]{geometry}
+
+\input{preamble/preamble}
+
+\renewcommand{\and}{\\}
+\newcommand{\trento}{$\rm T_{R}ENTo$}
+%\newcommand{\mychapter}[1]{\chapter{#1}\markboth{#1}{}\addcontentsline{toc}{chapter}{#1}
+%}
+%\newcommand{\mysection}[1]{\section{#1}\addcontentsline{toc}{section}{#1}
+%}
+%\newcommand{\mysubsection}[1]{\subsection{#1}\addcontentsline{toc}{subsection}{#1}
+%}
+\newcommand{\mychapter}[1]{\chapter{#1}\markboth{#1}{}
+}
+\newcommand{\mysection}[1]{\section{#1}
+}
+\newcommand{\mysubsection}[1]{\subsection{#1}
+}
+\newcommand{\qcd}{Quantum Chromodynamics }
+\newcommand{\qgp}{Quark-Gluon Plasma }
+\newcommand{\RHIC}{Relativistic Heavy-Ion Collider }
+\newcommand{\LHC}{Large Hadron Collider }
+
+%opening
+\title{Title}
+\author{Fabio de Moraes Canedo}
+
+\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+\pagenumbering{roman}
+
+%\setstretch{1.5}
+{
+\input{Content/rosto}
+}
+%\maketitle
+
+\chapter*{}
+
+\begin{center}
+\textbf{\textit{\`{A} Malu}}
+\end{center}
+
+
+\input{Content/agradecimento}
+
+\chapter*{}
+
+\epigraph{\textit{In so far as a scientific statement speaks about reality, it must be falsifiable; and in so far as it is not falsifiable, it does not speak about reality.}}{Karl Popper}
+
+\epigraph{\textit{``One of the symptoms of an approaching nervous breakdown
+			      is the belief that one’s work is terribly important."}
+			      }{Bertrand Russell, \textit{The Conquest of Happiness}}
+
+\input{Content/resumo}
+
+\input{Content/abstract}
+
+\tableofcontents
+
+\listoffigures
+
+%\begin{abstract}
+%\input{Content/resumo}
+%\end{abstract}
+
+%\input{tikz_images/arquivo_teste}
+
+\mychapter{Introduction}
+
+\pagenumbering{arabic}
+
+\input{Content/apresentacao}
+
+\mychapter{Theory} \label{theory}
+%\chapter{Introdução}
+%\markboth{Introdução}{}
+%\addcontentsline{toc}{chapter}{Introdução}
+
+\input{Content/introducao}
+
+\mychapter{Method} \label{method}
+%\markboth{Método}{}
+%\addcontentsline{toc}{chapter}{Método}
+
+\input{Content/metodo}
+
+\mychapter{Results} \label{results}
+%\markboth{Resultados}{}
+%\addcontentsline{toc}{chapter}{Resultados}
+
+\input{Content/resultado}
+
+\mychapter{Conclusion} \label{conclusions}
+%\markboth{Conclusão}{}
+%\addcontentsline{toc}{chapter}{Conclusão}
+
+\input{Content/conclusao}
+
+\bibliography{Bibliografia/bibliography.bib}
+\markboth{Bibliography}{}
+%\bibliographystyle{IEEEtran}
+\bibliographystyle{ieeetr}
+
+\printindex
+
+\end{document}

@@ -1,0 +1,82 @@
+\documentclass[a4paper,12pt]{article}
+
+\input{preamble/preamble}
+
+
+\renewcommand{\and}{\\}
+%opening
+\title{Estudo de subestrutura de jatos de quarks pesados em colisões de íons pesados}
+\author{Fabio de Moraes Canedo
+\and Marcelo Gameiro Munhoz}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\input{Content/resumo}
+\end{abstract}
+
+%\input{tikz_images/arquivo_teste}
+
+\section{Introdução}
+
+\subsection{Plasma de Quarks e Gluons}
+\input{Content/plasma_de_quarks_e_gluons_v2}
+
+\subsection{Quarks Pesados como Ponta de Prova}
+\input{Content/ponta_de_prova}
+
+\newpage
+
+\section{Objetivo}
+\input{Content/objetivo}
+
+\newpage
+
+\section{Plano de Trabalho e Cronograma}
+\input{Content/cronograma}
+
+\newpage
+
+\section{Material e Métodos}
+\input{Content/metodos}
+
+\subsection{MUSIC}\label{music}
+\input{Content/music}
+
+\subsection{HYDJET++}\label{hjet}
+\input{Content/hydjet}
+
+\newpage
+
+\section{Análise dos Dados}
+\input{Content/analise}
+
+\begin{appendices}
+
+\section{Algoritmos de \emph{Jet Clustering}}\label{algoritmos}
+\input{Content/algoritmos}
+
+\section{Variáveis}\label{variaveis}
+\input{Content/variaveis}
+
+\section{Hidrodinâmica Relativística}\label{hidrodinamica}
+\input{Content/hidrodinamica}
+
+\section{Modelo de Lund}
+\input{Content/qcd}
+
+%\section{Termodinâmica do QGP}\label{termo}
+%\input{Content/termodinamica}
+
+\section{Modelo de Glauber}\label{glauber}
+\input{Content/glauber}
+
+\end{appendices}
+
+\bibliography{Bibliografia/bibliografia} 
+\bibliographystyle{IEEEtran}
+%\bibliographystyle{ieeetr}
+
+\end{document}

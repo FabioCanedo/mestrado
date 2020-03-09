@@ -1,0 +1,51 @@
+
+Loading [MathJax]/extensions/TeX/noErrors.js
+Cornell University
+Cornell University Library
+We gratefully acknowledge support from
+the Simons Foundation
+and member institutions
+arXiv.org > hep-ph > arXiv:0809.2708
+( Help | Advanced search )
+Full-text links:
+Download:
+
+    PDF
+    PostScript
+    Other formats
+
+( license )
+Current browse context:
+hep-ph
+< prev  |  next >
+new  | recent  | 0809
+References & Citations
+
+    INSPIRE HEP
+    ( refers to | cited by )
+    NASA ADS
+
+Bookmark
+( what is this? )
+CiteULike logo BibSonomy logo Mendeley logo del.icio.us logo Digg logo Reddit logo ScienceWISE logo
+High Energy Physics - Phenomenology
+Title: Heavy ion event generator HYDJET++ (HYDrodynamics plus JETs)
+Authors: I.P. Lokhtin , L.V. Malinina , S.V. Petrushanko , A.M. Snigirev , I. Arsene , K. Tywoniuk
+(Submitted on 16 Sep 2008 ( v1 ), last revised 14 Nov 2008 (this version, v2))
+
+    Abstract: HYDJET++ is a Monte-Carlo event generator for simulation of relativistic heavy ion AA collisions considered as a superposition of the soft, hydro-type state and the hard state resulting from multi-parton fragmentation. This model is the development and continuation of HYDJET event generator (Lokhtin & Snigirev, 2006, EPJC, 45, 211). The main program is written in the object-oriented C++ language under the ROOT environment. The hard part of HYDJET++ is identical to the hard part of Fortran-written HYDJET and it is included in the generator structure as a separate directory. The soft part of HYDJET++ event is the "thermal" hadronic state generated on the chemical and thermal freeze-out hypersurfaces obtained from the parameterization of relativistic hydrodynamics with preset freeze-out conditions. It includes the longitudinal, radial and elliptic flow effects and the decays of hadronic resonances. The corresponding fast Monte-Carlo simulation procedure, C++ code FAST MC (Amelin et al., 2006, PRC, 74, 064901; 2008, PRC, 77, 014903) is adapted to HYDJET++. It is designed for studying the multi-particle production in a wide energy range of heavy ion experimental facilities: from FAIR and NICA to RHIC and LHC. 
+
+Comments: 	44 pages including 6 figures as EPS-files; prepared using LaTeX package for publication in Computer Physics Communications
+Subjects: 	High Energy Physics - Phenomenology (hep-ph)
+Journal reference: 	Comput.Phys.Commun.180:779-799,2009
+DOI : 	10.1016/j.cpc.2008.11.015
+Cite as: 	arXiv:0809.2708 [hep-ph]
+  	(or arXiv:0809.2708v2 [hep-ph] for this version)
+Submission history
+From: Igor Lokhtin P. [ view email ]
+[v1] Tue, 16 Sep 2008 17:45:32 GMT (337kb)
+[v2] Fri, 14 Nov 2008 17:47:20 GMT (337kb)
+Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )
+
+Link back to: arXiv , form interface , contact .
+Twitter

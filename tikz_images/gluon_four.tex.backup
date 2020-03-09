@@ -1,0 +1,77 @@
+%Arquivo teste para imagens
+
+\begin{figure}[!h]
+ %\begin{center}
+ %\tdplotsetmaincoords{70}{120}
+ %[tdplot_main_coords, scale=1]
+
+  \begin{tikzpicture}[
+        thick,
+        % Set the overall layout of the tree
+        level/.style={level distance=1.5cm},
+        level 2/.style={sibling distance=2.6cm},
+        level 3/.style={sibling distance=2cm}
+    ]
+    \coordinate
+        child[grow=left, level distance=0pt]{
+            child {
+                node {$g$}
+                % The 'edge from parent' is actually not needed because it is
+                % implicitly added.
+                edge from parent [gluon]
+            }
+            child {
+                node {$g$}
+                edge from parent [gluon]
+            }
+        }
+        % I have to insert a dummy child to get the tree to grow
+        % correctly to the right.
+        child[grow=right, level distance=0pt]{
+	  child {
+	    node {$g$}
+	      edge from parent [gluon]
+	  }
+	};
+\end{tikzpicture}
+ 
+ \begin{tikzpicture}[
+        thick,
+        % Set the overall layout of the tree
+        level/.style={level distance=1.5cm},
+        level 2/.style={sibling distance=2.6cm},
+        level 3/.style={sibling distance=2cm}
+    ]
+    \coordinate
+        child[grow=left, level distance=0pt]{
+            child {
+                node {$g$}
+                % The 'edge from parent' is actually not needed because it is
+                % implicitly added.
+                edge from parent [gluon]
+            }
+            child {
+                node {$g$}
+                edge from parent [gluon]
+            }
+        }
+        % I have to insert a dummy child to get the tree to grow
+        % correctly to the right.
+        child[grow=right, level distance=0pt]{
+	  child {
+	    node {$g$}
+	      edge from parent [gluon]
+	  }
+	  child {
+	    node {$g$}
+	    edge from parent [gluon]
+	  }
+	};
+\end{tikzpicture}
+
+\caption{Vértice de quatro {\it gluons}.}
+\label{fourgluon}
+
+ %\end{center}
+
+\end{figure}

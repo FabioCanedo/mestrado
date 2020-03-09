@@ -1,0 +1,40 @@
+A intenção do trabalho é a realização de simulações para analisar certos observáveis para o estudo de quarks pesados
+com objetivo de extrair informações do QGP, através de mecanismos supracitados. Especificamente,
+iremos verificar a relação entre modelos de perda de energia e os observáveis de subestrutura
+de jatos. Os observáveis estudados serão a distância angular entre os centro dos subjatos e 
+a fração energética compartilhada entre ambos. Certos modelos \cite{zapp_monte_2009, renk_jet_2014} preveem
+que o meio deve interferir em processos de perda de energia através de processos como os da Figura \ref{proc_perd}.
+
+\begin{figure}[!htb]
+\begin{floatrow}
+
+\subfloat[]{
+ \begin{tikzpicture}[scale=.5]
+ \draw [fermion] (0,4) -- (2,2);
+ \draw [gluon] (0,0) -- (2,2);
+ \draw [fermion] (2,2) -- (4,2);
+ \draw [gluon] (4,2) -- (6,0);
+ \draw [fermion] (4,2) -- (6,4) node[anchor=south,red]{$Q$};
+ \end{tikzpicture}
+ }
+ 
+ \subfloat[]{
+ \begin{tikzpicture}[scale=.5]
+  \draw [fermion] (0,4) -- (2,2);
+ \draw [gluon] (0,0) -- (2,2);
+ \draw [fermion] (2,2) -- (4,2);
+ \draw [gluon] (5,3) -- (7,3);
+ \draw [gluon] (4,2) -- (6,0);
+ \draw [fermion] (4,2) -- (6,4) node[anchor=south,red]{$Q$};
+ \end{tikzpicture}
+ 
+ }
+ 
+\end{floatrow}
+
+\caption{Processos de perda de energia no meio}
+\label{proc_perd}
+
+\end{figure}
+
+

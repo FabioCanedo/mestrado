@@ -1,0 +1,21 @@
+\usetikzlibrary{trees}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.markings}
+
+\tikzset{
+				    photon/.style={decorate, decoration={snake}, draw=red},
+				    electron/.style={draw=blue, postaction={decorate},
+				        decoration={markings,mark=at position .55 with {\arrow[draw=blue]{>}}}},
+				    gluon/.style={decorate, draw=magenta,
+				        decoration={coil,amplitude=4pt, segment length=5pt}} 
+				}
+
+\begin{tikzpicture}[thick]
+
+\draw [photon] (0,0) -- (0,3);
+
+\draw [electron] (0,3) -- (-1,5);
+
+\draw [electron]  (1,5) .. controls (.5,3) and (.5,7) .. (0,3);
+
+\end{tikzpicture}

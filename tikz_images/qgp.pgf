@@ -1,0 +1,23 @@
+\usetikzlibrary{trees}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.markings}
+
+\tikzset{
+				    photon/.style={decorate, decoration={snake}, draw=red},
+				    electron/.style={draw=blue, postaction={decorate},
+				        decoration={markings,mark=at position .55 with {\arrow[draw=blue]{>}}}},
+				    gluon/.style={decorate, draw=magenta,
+				        decoration={coil,amplitude=4pt, segment length=5pt}} 
+				}
+
+\begin{tikzpicture}[thick]
+
+\fill[red] (0,23) ellipse (2 and 3) node [black,scale=2] {Pb};
+
+\fill[red] (8,21) ellipse (2 and 3) node [black,scale=2] {Pb};
+
+\shade[outer color=red,inner color=orange] (3,13) ellipse (2 and 3) -- (5,11) ellipse (2 and 3);
+
+\shade[inner color=yellow, outer color=red,decorate,decoration={snake,amplitude=3,segment length=20}] (4,1.5) circle (3) node [scale=2] {QGP};
+
+\end{tikzpicture}

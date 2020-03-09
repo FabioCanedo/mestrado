@@ -1,0 +1,55 @@
+	PROGRAM INTEGRAL
+
+	INTEGER :: N, I, J, K
+	REAL :: X, Y, Z, DELTA, A, B, TOTAL, R
+
+	N=100
+	A=-8.0
+	B=8.0
+	X=A
+	Y=A
+	Z=A
+	TOTAL=0.0
+
+	DELTA=(B-A)/(N-1)
+
+	DO I=1,N-1
+
+	Y=A
+		DO J=1,N-1
+		
+		Z=A
+			DO K=1,N-1
+		
+			R=SQRT(X**2+Y**2+Z**2)
+			TOTAL=TOTAL+((DELTA**3)*F(R))
+			Z=Z+DELTA
+
+			END DO
+		Y=Y+DELTA
+
+		END DO
+	
+	X=X+DELTA
+
+	END DO
+
+	PRINT*, 'O resultado da integral é:'
+	PRINT*, TOTAL
+
+	END PROGRAM INTEGRAL
+
+	FUNCTION F(R)
+
+	REAL :: DENS, RAIO, THICK
+	REAL, PARAMETER :: E=2.71828
+
+	DENS=0.2
+	RAIO=6.5
+	THICK=1.0E-20
+
+	F=DENS/(1+E**((R-RAIO)/THICK))
+
+	RETURN
+
+	END FUNCTION 

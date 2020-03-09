@@ -1,0 +1,126 @@
+O Hamiltoniano do problema em questão é dado por:
+
+\begin{multline}
+H = \sum_{i=1}^{L} \epsilon_a a_{i}^\dagger a_{i} + \epsilon_b b_{i}^\dagger b_{i} - J \sum_{i=1}^{L} (a_{i+1}^\dagger a_i + a_{i}^\dagger a_{i+1}) - J \sum_{i=1}^{L} (b_{i+1}^\dagger b_i + b_{i}^\dagger b_{i+1}) \\ - J_{ab} \sum_{i=1}^{L} (a_i^\dagger b_i + b_i^\dagger a_i)
+\label{ham}
+\end{multline}
+
+Para esse problema, começamos com a expansão:
+
+\begin{equation}
+a_j = \sum_{m=-\frac{L}{2}}^{\frac{L}{2}} e^{i(mj)} \tilde{a}_m
+\label{fourier}
+\end{equation}
+
+Devido à condição de contorno $a_j=a_{j+L}$, teremos:
+
+\begin{equation}
+m = \frac{2 \pi n}{L} \text{ onde: } n \in \mathbb{Z}
+\end{equation}
+
+Multiplicando a equação \eqref{fourier} por $e^{-ijk}$ e somando em j de $1$ a $L$, obteremos:
+
+
+\begin{align}
+\begin{split}
+\sum_{j=1}^{L} e^{-ijk} a_j &= \sum_{j=1}^{L} \sum_{m=-\frac{L}{2}}^{\frac{L}{2}} e^{-ijk} e^{i(mj)} \tilde{a}_m \\
+&= \sum_{m=-\frac{L}{2}}^{\frac{L}{2}} \tilde{a}_m \sum_{j=1}^{L} e^{ij(m-k)} \\
+&= \sum_{m=-\frac{L}{2}}^{\frac{L}{2}} \tilde{a}_m \delta_{m}^{k} L \\
+&= L \tilde{a}_k \\
+\end{split}
+\end{align}
+
+Portanto:
+
+\begin{equation}
+\tilde{a}_k = \frac{1}{L} \sum_{j=1}^{L} e^{-ijk} a_j
+\end{equation}
+
+Além disso, queremos que:
+
+\begin{equation}
+a_{j}^* = a_{j}
+\end{equation}
+
+Substituindo a Equação \eqref{fourier} e mudando a variável de soma do lado esquerdo($m \rightarrow -m$), obtemos:
+
+\begin{equation}
+\sum_{m=-\frac{L}{2}}^{\frac{L}{2}} e^{i(mj)} \tilde{a^{*}}_{-m} - e^{i(mj)} \tilde{a}_m = 0
+\end{equation}
+
+Essa soma somente vale zero se:
+
+\begin{equation}
+\tilde{a}_{m}^* = \tilde{a}_{-m}
+\end{equation}
+
+Agora, é possível demonstrar que:
+
+\begin{subequations}
+\begin{align}
+\sum_{j=1}^{L} a_{j}^{\dagger} a_{j} &= L\sum_{m=-\frac{L}{2}}^{\frac{L}{2}} \tilde{a}_{m}^{\dagger} \tilde{a}_{-m} \\
+\sum_{j=1}^{L} a_{j+1}^{\dagger} a_{j} &= L\sum_{m=-\frac{L}{2}}^{\frac{L}{2}} \tilde{a}_{m}^{\dagger} \tilde{a}_{-m} e^{im} \\
+\sum_{j=1}^{L} a_{j}^{\dagger} a_{j+1} &= L\sum_{m=-\frac{L}{2}}^{\frac{L}{2}} \tilde{a}_{m}^{\dagger} \tilde{a}_{-m} e^{-im} \\
+\sum_{j=1}^{L} a_{j}^{\dagger} b_{j} &= L\sum_{m=-\frac{L}{2}}^{\frac{L}{2}} \tilde{a}_{m}^{\dagger} \tilde{b}_{-m}
+\end{align}
+\end{subequations}
+
+Substituindo essas identidades em \eqref{ham}, obtemos:
+
+\begin{equation}
+\begin{split}
+H = L \sum_{m=-\frac{L}{2}}^{\frac{L}{2}} \bigg\{ 
+\epsilon_a \tilde{a}_{m}^{\dagger} \tilde{a}_{-m} +
+\epsilon_b \tilde{b}_{m}^{\dagger} \tilde{b}_{-m}
+&-2J\cos(m)
+\left(
+\tilde{a}_{m}^{\dagger} \tilde{a}_{-m} +
+\tilde{b}_{m}^{\dagger} \tilde{b}_{-m}
+\right) \\
+& -2J_{ab} \left(
+\tilde{a}_{m}^{\dagger} \tilde{b}_{-m} +
+\tilde{b}_{m}^{\dagger} \tilde{a}_{-m}
+\right)
+\bigg\}
+\end{split}
+\label{newham}
+\end{equation}
+
+Se definirmos as matrizes:
+
+\begin{subequations}
+\begin{align}
+\tilde{c}_{m} :=&
+\begin{bmatrix}
+\tilde{a}_{m} \\
+\tilde{b}_{m}
+\end{bmatrix} \\
+\tilde{c}_{m}^{\dagger} :=&
+\begin{bmatrix}
+\tilde{a}_{m}^{\dagger} &
+\tilde{b}_{m}^{\dagger}
+\end{bmatrix} \\
+Q_{m} :=&
+\begin{bmatrix}
+\epsilon_a -2J\cos(m) & -2J_{ab} \\
+-2J_{ab} & \epsilon_b -2J\cos(m)
+\end{bmatrix}
+\end{align}
+\end{subequations}
+
+Se substituirmos essas definições em \eqref{newham}, podemos reescrevê-lo como:
+
+\begin{equation}
+H = L \sum_{m=-\frac{L}{2}}^{\frac{L}{2}} \tilde{c}_{m}^{\dagger} Q_{m} \tilde{c}_{-m}
+\end{equation}
+
+Diagonalizando essa nova matriz $Q_{m}$ obteremos uma nova base como combinação linear dos operadores $\tilde{a}_m$, $\tilde{a}_m^{\dagger}$, $\tilde{b}_m$ e $\tilde{b}_m^{\dagger}$. Nessa base, o Hamiltoniano será diagonal, e teremos dois tipos de excitação diferentes da rede, representadas pelos dois autovetores dessa matriz, cada qual com sua relação de dispersão. Os autovalores dessa nova matriz serão:
+
+\begin{subequations}
+\begin{align}
+\lambda_{\mu, m} &=  \frac{\epsilon_{a}+\epsilon_{b}}{2} + 2J\cos(m) - \sqrt{ 2J_{ab}^{2} + \left(\frac{\epsilon_{a} - \epsilon_{b}}{2}\right)^{2}} \\
+\lambda_{\nu, m} &=  \frac{\epsilon_{a}+\epsilon_{b}}{2} + 2J\cos(m) + \sqrt{ 2J_{ab}^{2} + \left(\frac{\epsilon_{a} - \epsilon_{b}}{2}\right)^{2}}
+\end{align}
+\end{subequations}
+
+Essas são, portanto, as relações de dispersão desse Hamiltoniano.

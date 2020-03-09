@@ -1,0 +1,20 @@
+\documentclass[a4paper,10pt]{article}
+
+\input{preamble}
+
+
+%opening
+\title{Título do Projeto}
+\author{Fabio de Moraes Canedo}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\input{resumo}
+\end{abstract}
+
+\input{jatos}
+
+\end{document}

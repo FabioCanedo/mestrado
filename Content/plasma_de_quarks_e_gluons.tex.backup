@@ -1,0 +1,46 @@
+Através da História, conforme o entendimento das interações físicas foi aumentando,
+os vários fenômenos observados foram classificados em grupos cada vez maiores, através
+de esquemas de unificação de compreensão de como os corpos da Natureza interagem entre si.
+No século XX, chegou-se à conclusão de que todos os fenômenos poderiam ser descritos em termos
+de interações fundamentais. Existem quatro dessas interações de acordo com a compreensão
+atual da Natureza:
+
+\begin{description}
+ \item [Gravidade] é a interação resposável por manter os planetas em suas órbitas, é a mais
+ fraca de todas as interações e somente se manifesta em grandes escalas, é a única das quatro
+ forças que não possui descrição quântica;
+ \item [Eletrodinâmica] é a interação entre cargas elétricas, embora tenha sido descoberta depois da Gravidade,
+ é a que descreve a maioria dos fenômenos na escala macroscópica cotidiana, como reações químicas, atrito, forças elásticas,
+ pressão do ar, etc. Também se manifesta a longas distâncias e é forte o suficiente para manifestar-se a curtas distâncias;
+ \item [Força forte] é a força responsável por manter os núcleos atômicos estáveis, devido 
+ às suas propriedades, apenas se manifesta a curtas distâncias;
+ \item [Força fraca] é a força responsável pelo decaimento radioativo, intermediada por bósons
+ massivos, se manifesta a distâncias também limitadas;
+\end{description}
+
+Além das interações, nossa compreensão do que constitui a matéria foi evoluindo. Na década de 1930, a lista dos blocos
+constituintes da matéria conhecidos continha apenas três itens: próton, elétron e o nêutron. Entretanto, com estudo de raios
+cósmicos, mais partículas começaram a ser descobertas, e conforme a lista foi aumentando, evidências de subestrutura da matéria
+começaram a ficar mais claras. Nos anos 60, o modelo dos quarks foi proposto, e hoje conhecemos 6 deles: {\it up, down, strange,
+charm, bottom} e {\it top}. Devido às propriedades da interação forte, eles jamais podem ser observados como partículas livres na
+Natureza. Mas apenas em estados confinados, formando assim os chamados hádrons.
+\par
+Embora eles sempre se encontrem confinados, em colisões íons pesados(íons de chumbo ou ouro) a uma energia da ordem de $100 GeV$, é possível
+realizar a quebra momentânea dos hádrons constituintes desses núcleos, liberando novos graus de liberdade para o movimento
+dos quarks, dessa maneira, atinge-se um novo estado da matéria, chamado Plasma de Quarks e Gluons, ou QGP\footnote{Sigla
+em inglês para Plasma de Quarks e Gluons}. A temperatura necessária para formar este estado da matéria é da ordem de milhares de $MeV$ ou
+$10^{10} K$, e a densidade de energia é da ordem de $0.2-1 GeV/fm^{3}$. As propriedades deste estado da matéria podem ser estudadas
+analisando os produtos dessa colisão após o resfriamento da matéria. Através espectro de $p_T$\footnote{Ver Apêndice \ref{variaveis}} das
+partículas, por exemplo, fornece insformações sobre a entropia e a temperatura do plasma, através da multiplicidade e da inclinação do
+gráfico, respectivamente. Em geral, essas propriedades, referentes à expansão hidrodinâmica do plasma\footnote{Ver Apêndice \ref{hidrodinamica}}
+estarão associados ao espectro na faixa de $p_T \approx 0-2 GeV/c$. Na faixa $p_T > 2 GeV/c$, observa-se os efeitos de fenômenos da classe
+{\it hard scaterring}. Estes fenômenos são resultados da formação de partículas de alta energia que atravessam o plasma aquecido,
+depositando energia neste. Na sua saída, devido às propriedades da QCD\footnote{QCD ou {\it Quantum Chromodynamics} é a teoria que descreve
+as interações fortes.}, essas partículas se fragmentam criando os chamados jatos ou {\it jets}. Esses jatos sofrem efeitos estruturais por
+conta da interação dos partons iniciais\cite{lokhtin_angular_1998,bass_systematic_2009,connors_review_2017,nattrass_jet_2018,
+denterria_jet_2009} com o plasma.
+
+%\input{tikz_images/qgp}
+
+Assim como o resfriamento de jatos, ou \emph{jet quenching}, outros efeitos são considerados como assinaturas do Plasma de Quarks e Gluons,
+tal como a produção de estranheza e a supressão de $J/\Psi$.

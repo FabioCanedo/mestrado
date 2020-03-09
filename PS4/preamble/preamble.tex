@@ -1,0 +1,43 @@
+\usepackage{afterpage}
+\usepackage{amssymb,amsmath}
+\usepackage[title]{appendix}
+\usepackage[brazilian]{babel}
+\usepackage{blindtext}
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\usepackage{chngcntr}
+\usepackage{floatrow}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{subfig}
+\usepackage{tikz-3dplot}
+\usepackage{tikz}
+
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+\usetikzlibrary{trees}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.markings}
+
+\tikzset{
+    photon/.style={decorate, decoration={snake}, draw=black},
+    fermion/.style={draw=black, postaction={decorate}, 
+    decoration={markings,mark=at position .55 with {\arrow[scale=2,draw=black]{>}}}},
+    afermion/.style={draw=black, postaction={decorate}, 
+    decoration={markings,mark=at position .55 with {\arrow[scale=2,draw=black]{<}}}},
+    gluon/.style={decorate, draw=green,
+    decoration={coil,amplitude=4pt, segment length=5pt}} 
+    }
+
+\counterwithin{figure}{subsection}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+    
+\setlength{\parindent}{20pt}
+\DeclareMathOperator{\Tr}{Tr}

@@ -1,0 +1,34 @@
+\subsection{Modelo de Lund}
+
+A teoria que descreve as interações mediadas por \emph{gluons} é a
+QCD\footnote{Sigla em inglês para Cromodinâmica Quântica}. É uma teoria
+de calibre não-abeliana, o que significa que os bósons mediadores
+de suas interações podem interagir entre si também, formando vértices
+constituídos apenas por \emph{gluons}, como na Figura \ref{fourgluon}.
+
+\input{tikz_images/gluon_four}
+
+Uma das consequências desta interação entre os \emph{glons}, é que as linhas
+de campo entre um \emph{quark} e um \emph{antiquark} irão estar todas contidas
+em uma região aproximadamente cilíndrica entre ambos, como na Figura \ref{linhascampo}.
+
+\begin{figure}[!h]
+\centering
+ \includegraphics[scale=0.5]{Introducao/gluonfield.png}
+ \caption{Linhas de campo entre um \emph{quark} e um \emph{antiquark}.}
+ \label{linhascampo}
+\end{figure}
+
+Isso dará origem a uma densidade de energia aproximadamente constante, que dependerá
+apenas da distância entre ambos:
+
+\begin{equation}
+ V(r) = -\kappa r
+\end{equation}
+
+Isso faz com que os \emph{quarks} movam-se sempre sob uma fora constante que muda de direção.
+Eventualmente, na região preenchida pelo campo, devido a uma distância grande entre os \emph{quarks},
+a energia do campo pode ser grande o suficiente para que um par partícula e anti-partícula se forme.
+Quando isso ocorre, a energia fica distribuída em duas regiões devido a efeitos de blindagem, e teremos,
+então, dois pares agora independentes, esse processo continua até que todos os pares formados não atingam
+mais a distância necessária para a criação de pares. Esse processo pode ser observado na Figura \ref{}

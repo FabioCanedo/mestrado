@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: tese.aux
+The style file: ieeetr.bst
+Database file #1: Bibliografia/bibliography.bib.bib
+Reallocated buffer (elt_size=1) to 40000 items from 20000.
+Reallocated sv_buffer (elt_size=1) to 40000 items from 20000.
+Reallocated ex_buf (elt_size=1) to 40000 items from 20000.
+Reallocated out_buf (elt_size=1) to 40000 items from 20000.
+Reallocated name_tok (elt_size=4) to 40000 items from 20000.
+Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
+Reallocated buffer (elt_size=1) to 60000 items from 40000.
+Reallocated sv_buffer (elt_size=1) to 60000 items from 40000.
+Reallocated ex_buf (elt_size=1) to 60000 items from 40000.
+Reallocated out_buf (elt_size=1) to 60000 items from 40000.
+Reallocated name_tok (elt_size=4) to 60000 items from 40000.
+Reallocated name_sep_char (elt_size=1) to 60000 items from 40000.
+Reallocated buffer (elt_size=1) to 80000 items from 60000.
+Reallocated sv_buffer (elt_size=1) to 80000 items from 60000.
+Reallocated ex_buf (elt_size=1) to 80000 items from 60000.
+Reallocated out_buf (elt_size=1) to 80000 items from 60000.
+Reallocated name_tok (elt_size=4) to 80000 items from 60000.
+Reallocated name_sep_char (elt_size=1) to 80000 items from 60000.
+Warning--I didn't find a database entry for "bjorken_highly_1983"
+Warning--empty journal in lifshitz_statistical_1980
+Warning--empty publisher in letessier_hadrons_2002
+You've used 39 entries,
+            1876 wiz_defined-function locations,
+            705 strings with 10106 characters,
+and the built_in function-call counts, 9230 in all, are:
+= -- 956
+> -- 358
+< -- 0
++ -- 137
+- -- 98
+* -- 631
+:= -- 1336
+add.period$ -- 69
+call.type$ -- 39
+change.case$ -- 30
+chr.to.int$ -- 0
+cite$ -- 41
+duplicate$ -- 482
+empty$ -- 831
+format.name$ -- 98
+if$ -- 2252
+int.to.chr$ -- 0
+int.to.str$ -- 39
+missing$ -- 47
+newline$ -- 151
+num.names$ -- 38
+pop$ -- 94
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 335
+stack$ -- 0
+substring$ -- 438
+swap$ -- 199
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 81
+width$ -- 41
+write$ -- 406
+(There were 3 warnings)

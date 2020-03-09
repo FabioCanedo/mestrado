@@ -1,0 +1,20 @@
+\subsection{Algoritmos de Reconstrução de Jatos}
+
+Para realizar a reconstrução de jatos, costuma-se definir a seguinte quantidade:
+
+\begin{equation}
+ \Delta R_{ij} = \sqrt{(\eta_i-\eta_j)^2+(\phi_i-\phi_j)^2}
+\end{equation}
+
+Essa será, para as duas partículas, aqui chamadas de $i$ e $j$, uma distância angular definida entre as duas. A maioria dos algoritmos de
+jatos irão utilizar essa definição de distância angular para realizar os agrupamentos, ou {\it clusters} de partículas para a reconstrução dos jatos.
+Estes são chamados os algoritmos de cones. Um algoritmo comumente utilizado consiste em, primeiro definir um parâmetro $R$, em seguida, escolher uma partícula {\it semente},
+normalmente, escolhe-se a partícula de maor $p_T$. Após esses passos, localizamos a partícula de maior $p_T$ a uma distância menor ou igual a $R$.
+\\
+Então, retiramos essas duas partículas dos dados e definimos uma nova partícula com momento:
+
+\begin{equation}
+ p_{\mu}^{J} = p_{\mu}^1 + p_{\mu}^2
+\end{equation}
+
+Essa partícula define o novo centro do cone, agora procuramos a partícula de maior $p_T$ de distância menor ou igual a $R$ desta, e assim por diante.

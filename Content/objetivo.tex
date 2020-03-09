@@ -1,0 +1,53 @@
+A intenção do trabalho é a realização de simulações para analisar certos observáveis para o estudo de quarks pesados
+com objetivo de extrair informações do QGP, através de mecanismos supracitados. Especificamente,
+iremos verificar a relação entre modelos de perda de energia e os observáveis de subestrutura
+de jatos. Os observáveis estudados serão a distância angular entre os centro dos subjatos e 
+a fração energética compartilhada entre ambos. Certos modelos \cite{zapp_monte_2009, renk_jet_2014} preveem
+que o meio deve interferir em processos de perda de energia através de processos como os da Figura \ref{proc_perd}.
+
+\begin{figure}[!htb]
+\begin{floatrow}
+
+\subfloat[Colisão elástica com gluons do meio.]{
+ \begin{tikzpicture}[scale=.5]
+ \draw [fermion] (0,4) -- (2,2);
+ \draw [gluon] (0,0) -- (2,2);
+ \draw [fermion] (2,2) -- (4,2);
+ \draw [gluon] (4,2) -- (6,0);
+ \draw [fermion] (4,2) -- (6,4) node[anchor=south,red]{$Q$};
+ \end{tikzpicture}
+ }
+ 
+ \subfloat[Radiação induzida pelo meio.]{
+ \begin{tikzpicture}[scale=.5]
+  \draw [fermion] (0,4) -- (2,2);
+ \draw [gluon] (0,0) -- (2,2);
+ \draw [fermion] (2,2) -- (4,2);
+ \draw [gluon] (5,3) -- (7,3);
+ \draw [gluon] (4,2) -- (6,0);
+ \draw [fermion] (4,2) -- (6,4) node[anchor=south,red]{$Q$};
+ \end{tikzpicture}
+ 
+ }
+ 
+\end{floatrow}
+
+\caption{Processos de perda de energia no meio}
+\label{proc_perd}
+
+\end{figure}
+
+Em ambos os casos descritos na Figura \ref{proc_perd}, a perda de energia é afetada por elementos de matriz que carregam
+informações do meio, especialmente nos gluons iniciais da colisão. Portanto, o meio afeta as fragmentações e deve afetar
+as subestruturas finais dos jatos. Assim um jato $p_\mu$ que pode ser quebrado em dois subjatos $p_{1\mu}$ e $p_{2\mu}$,
+tal que $p_\mu=p_{1\mu}+p_{2\mu}$, pode ser analizado através dos números $z$ e $R_{12}$ nas equações:
+
+\begin{equation}
+ \begin{split}
+  E &= zE_1 + (1-z) E_2 \\
+  R_{12} &= sqrt{ (y_1-y_2)^2 + (\phi_1-\phi_2)^2 }
+ \end{split}
+\end{equation}
+
+Podemos então analisar a função $\frac{dN}{dz}$ e $\frac{dN}{dR_{12}}$ e formar espectros que, posteriormente, podem ser
+comparados para os casos de colisões $pp$.

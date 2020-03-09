@@ -1,0 +1,33 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Theory}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Quantum Chromodynamics }{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Quark-Gluon Plasma }{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Hydrodynamics of the Quark-Gluon Plasma }{7}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Relativistic Heavy-Ion Collisions}{8}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Initial Conditions}{8}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Glauber smooth model}{10}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}T$_{\rm R}$ENTo}{10}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}MC-KLN}{12}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Hydrodynamics}{13}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Bjorken expansion}{13}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}v-USPhydro}{13}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Jet Quenching}{15}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Jet Evolution With Energy Loss (JEWEL)}{15}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Hadronization}{17}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Lund Model}{17}{subsection.2.6.1}
+\contentsline {chapter}{\numberline {3}Method}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1}The simulation}{19}{section.3.1}
+\contentsline {section}{\numberline {3.2}Jet Algorithms}{21}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Background subtraction}{24}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Jet Observables}{24}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Girth}{25}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Dispersion}{25}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Jet Mass}{26}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Azimuthal anisotropy $v_2$}{26}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}Grid validation}{27}{section.3.4}
+\contentsline {chapter}{\numberline {4}Results}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Experimental Results}{33}{section.4.1}
+\contentsline {section}{\numberline {4.2}JEWEL results}{35}{section.4.2}
+\contentsline {section}{\numberline {4.3}JEWEL with realistic IC}{37}{section.4.3}
+\contentsline {section}{\numberline {4.4}JEWEL with realistic hydro}{45}{section.4.4}
+\contentsline {chapter}{\numberline {5}Conclusion}{49}{chapter.5}

@@ -1,0 +1,122 @@
+No início de colisões de íons pesados, quarks pesados podem ser gerados através dos mecanismos mostrados na Figura \ref{criacao}.
+
+\begin{figure}[!hbt]
+\begin{floatrow}
+ \subfloat[Criação de par através de aniquilação de gluons.]{
+ \begin{tikzpicture}[scale=.45]
+  \draw [gluon] (0,3) -- (4,2.5) node[near start,anchor=south,red]{$g$};
+  \draw [gluon] (0,0) -- (4,.5) node[near start,anchor=north,red]{$g$};
+  \draw [afermion] (4,2.5) -- (8,3) node[near end,anchor=south,red]{$\overline{Q}$};
+  \draw [fermion] (4,2.5) -- (4,.5);
+  \draw [fermion] (4,.5) -- (8,0) node[near end,anchor=south,red]{$Q$};
+ \end{tikzpicture}
+ \label{diagramaa}
+ }
+ 
+ \subfloat[Criação de par de quarks pesados através de aniquilação de quarks leves oriundos dos núcleons iniciais.]{
+ \begin{tikzpicture}[scale=.35]
+  \draw [fermion] (0,4) -- (3,2) node[near start,anchor=south,red]{$q$};
+  \draw [afermion] (0,0) -- (3,2) node[near start,anchor=north,red]{$\overline{q}$};
+  \draw [gluon] (3,2) -- (5,2);
+  \draw [fermion] (5,2) -- (8,4) node[near end,anchor=south,red]{$Q$};
+  \draw [afermion] (5,2) -- (8,0) node[near end,anchor=north,red]{$\overline{Q}$};
+ \end{tikzpicture}
+ \label{diagramab}
+ }
+ 
+ \subfloat[Mesmo processo do caso anterior, mas com emissão de gluon posterior.]{
+ \begin{tikzpicture}[scale=.45]
+  \draw [gluon] (0,3) -- (4,2.5) node[near start,anchor=south,red]{$g$};
+  \draw [gluon] (0,0) -- (4,.5) node[near start,anchor=north,red]{$g$};
+  \draw [afermion] (4,2.5) -- (8,3) node[near end,anchor=south,red]{$\overline{Q}$};
+  \draw [fermion] (4,2.5) -- (4,.5);
+  \draw [fermion] (4,.5) -- (8,0) node[near end,anchor=north,red]{$Q$};
+  \draw [gluon] (5,.375) -- (8,1.5) node[near end,anchor=south,red]{$g$};
+ \end{tikzpicture}
+ \label{diagramac}
+ }
+ 
+ \end{floatrow}
+ 
+ \begin{floatrow}
+  \subfloat[]{
+ \begin{tikzpicture}[scale=.45]
+  \draw [gluon] (0,3) -- (4,2.5) node[near start,anchor=south,red]{$g$};
+  \draw [fermion] (4,2.5) -- (8,3) node[near end,anchor=south,red]{$Q$};
+  \draw [afermion] (4,2.5) -- (5,2);
+  \draw [gluon] (0,0) -- (4,0) node[near start,anchor=north,red]{$g$};
+  \draw [gluon] (4,0) -- (5,2);
+  \draw [gluon] (4,0) -- (8,0) node[near end,anchor=north,red]{$g$};
+  \draw [afermion] (5,2) -- (8,2) node[near end,anchor=north,red]{$\overline{Q}$};
+ \end{tikzpicture}
+ }
+ 
+ \subfloat[]{
+ \begin{tikzpicture}[scale=.45]
+  \draw [gluon] (0,3) -- (3,2.5) node[near start,anchor=south,red]{$g$};
+  \draw [gluon] (3,2.5) -- (5,2.5);
+  \draw [gluon] (0,0) -- (3,0)node[near start,anchor=north,red]{$g$};
+  \draw [gluon] (3,0) -- (3,2.5);
+  \draw [gluon] (3,0) -- (8,0) node[near end,anchor=north,red]{$g$};
+  \draw [afermion] (5,2.5) -- (8,2) node[near end,anchor=north,red]{$\overline{Q}$};
+  \draw [fermion] (5,2.5) -- (8,3) node[near end,anchor=south,red]{$Q$};
+ \end{tikzpicture}
+ }
+ 
+ \subfloat[]{
+ \begin{tikzpicture}[scale=.45]
+  \draw [gluon] (0,4.5) -- (2,3.5) node[near start,anchor=south,red]{$g$};
+  \draw [afermion] (2,3.5) -- (8,6.5) node[near end,anchor=south,red]{$\overline{Q}$};
+  \draw [fermion] (2,3.5) -- (3,2.5);
+  \draw [fermion] (3,2.5) -- (8,4.5) node[near end,anchor=south,red]{$Q$};
+  \draw [gluon] (3,2.5) -- (4,1.5);
+  \draw [gluon] (4,1.5) -- (8,3.5) node[near end,anchor=north,red]{$g$};
+  \draw [gluon] (4,1.5) -- (4,0);
+  \draw [gluon] (0,0) -- (4,0) node[near start,anchor=north,red]{$g$};
+  \draw [gluon] (4,0) -- (8,0) node[near end,anchor=north,red]{$g$};
+ \end{tikzpicture}
+ }
+ 
+ \end{floatrow}
+
+ 
+ \caption{Processos de criação de quarks pesados.}
+ \label{criacao}
+\end{figure}
+
+
+Quarks pesados, como o \emph{bottom}, podem ser utilizados como ponta de prova para o estudo do Plasma de Quarks e Gluons
+devido à sua interação com o este em seu caminho para fora da região de interação\cite{li_inverting_2017,renk_jet_2014}. Eles
+interagem com o meio de duas formas, através da radiação induzida, ou \emph{gluonsstrahlung}, e através de reações colisionais.
+Embora estes mesmos feitos ocorram para quarks leves, a massa dos quarks pesados limita a sua perda de energia e também sua
+velocidade\footnote{Especialmente no limite $E \approx m$}, o que permite que ele ``colete'' mais informações sobre o QGP.
+\par
+Os efeitos do meio podem ser especialmente observados na subestrutura dos jatos, que são causadas por funções de fragmentação.
+Estas, por sua vez, estão diretamente relacionadas com os processos de perda de energia do parton no QGP. As funções de fragmentação
+são distribuições de probabilidade que refletem processos do tipo $a \longrightarrow b+c$. Para um certo número $z \in [0,1]$, teremos
+a relação entre as energias:
+
+\begin{equation}
+ E_a = z E_b + (1-z)E_c
+\end{equation}
+
+Podemos então, definir a função densidade de probabilidade do processo:
+
+\begin{equation}
+ P_{a \longrightarrow b+c}(z) = \frac{dN_{a \longrightarrow b+c}}{dz}
+ \label{probz}
+\end{equation}
+
+Essa função pode ser medida na subestrutura dos jatos, assim como a equivalente em abertura angular:
+
+\begin{equation}
+ P_{a \longrightarrow b+c}(\theta) = \frac{dN_{a \longrightarrow b+c}}{d\theta}
+ \label{probt}
+\end{equation}
+
+Essas quantidades podem ser calculadas com a utilização da pQCD\footnote{\emph{perturbative Quantum Chromodynamics}}, um exemplo desses
+cálculos pode ser encontrado em \cite{seymour_jet_1998}. Esses efeitos, como supramencionado, podem ser observados na subestrutura dos
+jatos. Por sua vez, a subestrutura pode ser observada através de variações no parâmetro $R$ nos algoritmos de reconstrução de jatos(ver
+Apêndice \ref{algoritmos}. Ao diminuirmos esse parâmetro, os algoritmos evitam o \emph{merge} dos jatos e podemos então, para dois
+jatos próximos comparar o a distância angular de dois jatos($\Delta R$) e a fração de energia que o jato mais leve possui da soma total.
+Isso deve fornecer evidência direta das funções de probabilidade definidas nas equações \eqref{probz} e \eqref{probt}.

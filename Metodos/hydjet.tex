@@ -1,0 +1,35 @@
+\subsection{HYDJET++}
+
+O gerador de eventos HYDJET++, descrito em \cite{lokhtin_hydjet++_2009} trabalha com dois
+processos distintos para a geração de eventos nas partes {\it hard} e {\it soft} das
+colisões de íons pesados.
+\par
+O processo {\it hard} se dá através de um modelo de perda de energia baseado na equação:
+
+\begin{equation}
+ \Delta E (L, E) = \int_{0}^{L} dl \frac{dP(l)}{dl} \lambda (l) \frac{dE(l,E}{dl},
+ \frac{dP(l)}{dl} = \frac{1}{\lambda (l)} \exp{-l/\lambda (l)}
+\end{equation}
+
+Nesta equação, temos um termo $\frac{dP(l)}{dl}$ como a probabilidade de \emph{scattering} no meio
+por unidade de comprimento atravessado pelo parton, $\lambda (l)$ é o livre caminho médio, e
+$\frac{dE(l,E}{dl}$ descreve a perda de energia por unidade de comprimento atravessado. Neste último
+termo, reações colisionais e radiativas são levadas em consideração. O espectro final, assim como o
+formato angular da emissão é calculado utilizando o gerador PYQUEN\cite{noauthor_pyquen_nodate}, que é uma versão modificada
+do PYTHIA\cite{noauthor_pythia_nodate}. Os \emph{partons} são gerados de acordo com o algoritmo PYTHIA, então, são
+feitos os espalhamentos respectivos durante seu caminho pelo QGP e também sua emissão radiativa. Em seguida,
+a hadronização é realizada através de um modelo de Lund\cite{skands_introduction_2013} para os \emph{partons} de alta energia e
+também para os \emph{gluons} de alta energia emitidos.
+
+\par
+
+A parte \emph{soft} do algoritmo é implementada através de implementação numérica tridimensional hidrodinâmica
+com uma superfície de freeze-out que emite partículas conforme a distribuição:
+
+\begin{equation}
+ f_{i}^{eq} (p^{*0} ;T^{ch} ,\mu_i , \gamma_s) = \frac{ g_i }{ \gamma_s^{-n_{i}^{s}} \exp{ ( [p^{*0} - \mu_i]/T^{ch} ) } \pm 1 }
+\end{equation}
+
+Esta distribuição representa um corpo negro emitindo as partículas à temperatura $T^{ch}$. A energia das partículas é calculada
+no referencial de repouso da superfície e é representada por $p^{*0}$. $\mu_i$ representa o potencial químico das partículas e
+$\gamma_s$ é o fator de supressão de estranheza.

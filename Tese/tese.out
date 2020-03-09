@@ -1,0 +1,33 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Theory}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Quantum Chromodynamics }{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Quark-Gluon Plasma }{chapter.2}% 4
+\BOOKMARK [2][-]{subsection.2.2.1}{Hydrodynamics of the Quark-Gluon Plasma }{section.2.2}% 5
+\BOOKMARK [1][-]{section.2.3}{Relativistic Heavy-Ion Collisions}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.3.1}{Initial Conditions}{section.2.3}% 7
+\BOOKMARK [2][-]{subsection.2.3.2}{Glauber smooth model}{section.2.3}% 8
+\BOOKMARK [2][-]{subsection.2.3.3}{TRENTo}{section.2.3}% 9
+\BOOKMARK [2][-]{subsection.2.3.4}{MC-KLN}{section.2.3}% 10
+\BOOKMARK [1][-]{section.2.4}{Hydrodynamics}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.4.1}{Bjorken expansion}{section.2.4}% 12
+\BOOKMARK [2][-]{subsection.2.4.2}{v-USPhydro}{section.2.4}% 13
+\BOOKMARK [1][-]{section.2.5}{Jet Quenching}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.5.1}{Jet Evolution With Energy Loss \(JEWEL\)}{section.2.5}% 15
+\BOOKMARK [1][-]{section.2.6}{Hadronization}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.6.1}{Lund Model}{section.2.6}% 17
+\BOOKMARK [0][-]{chapter.3}{Method}{}% 18
+\BOOKMARK [1][-]{section.3.1}{The simulation}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.2}{Jet Algorithms}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.2.1}{Background subtraction}{section.3.2}% 21
+\BOOKMARK [1][-]{section.3.3}{Jet Observables}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.1}{Girth}{section.3.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.2}{Dispersion}{section.3.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.3}{Jet Mass}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.4}{Azimuthal anisotropy v2}{section.3.3}% 26
+\BOOKMARK [1][-]{section.3.4}{Grid validation}{chapter.3}% 27
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Experimental Results}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.2}{JEWEL results}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.3}{JEWEL with realistic IC}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.4}{JEWEL with realistic hydro}{chapter.4}% 32
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 33

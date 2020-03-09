@@ -1,0 +1,52 @@
+\subsection{Algoritmos de {\it Jet Clustering}}
+
+Para se estudar jatos, é necessário definir uma maneira de agrupar as partículas medidas nos detectores 
+de uma maneira coerente e bem definida, como os requisitos do \emph{Snowmass accord}:
+
+\begin{enumerate}
+ \item Simples de implementar em uma análise experimental;
+ \item Simples de implementar em um cálculo teórico;
+ \item Definido em todas as ordens em cálculos perturbativos;
+ \item Gera seções de choque finitas em todas as ordens;
+ \item É insensível à hadronização;
+\end{enumerate}
+
+Para realizar a reconstrução de jatos\cite{salam_towards_2010}, costuma-se definir a seguinte quantidade:
+
+\begin{equation}
+ \Delta R_{ij} = \sqrt{(\eta_i-\eta_j)^2+(\phi_i-\phi_j)^2}
+\end{equation}
+
+Essa será, para as duas partículas, aqui chamadas de $i$ e $j$, uma distância angular
+definida entre as duas. A maioria dos algoritmos de jatos irão utilizar essa definição de distância angular para realizar os agrupamentos,
+ou {\it clusters} de partículas para a reconstrução dos jatos. Estes são chamados os algoritmos de cones. Um algoritmo
+comumente utilizado consiste em, primeiro definir um parâmetro $R$, em seguida, escolher uma partícula {\it semente}, normalmente, escolhe-se
+a partícula de maor $p_T$. Após esses passos, localizamos a partícula de maior $p_T$ a uma distância menor ou igual a $R$.
+\par
+Então, retiramos essas duas partículas dos dados e definimos uma nova partícula com momento:
+
+\begin{equation}
+ p_{\mu}^{J} = p_{\mu}^1 + p_{\mu}^2
+\end{equation}
+
+Essa partícula define o novo centro do cone, agora procuramos a partícula de maior $p_T$ de distância menor ou igual a $R$ desta, e assim por
+diante. Os métodos de reconstrução de jatos todos irão seguir alguma rotina que envolva calcular distâncias entre os hadrons de acordo com
+alguma métrica que utiliza a metida invariante acima, como eles podem precoder a partir daí varia, alguns exemplos são citados:
+
+\begin{description}
+ \item[IC-PR] são os algoritmos de cones interativos de remossão progressiva, isso
+ quer dizer que eles mudam a direção do cone a cada interação e retiram os jatos um de
+ cada vez;
+ \item[FC-PR] são semelhantes aos {\bf IC-PR}, mas as direções dos cones são fixas ao redor
+ da semente;
+ \item[IC-SM] são os algoritmos que utilizam cones iterativos, mas não removem os cones
+ estáveis, para lidar com \emph{overlapping}, utiliza-se métodos que envolvem atribuir cada
+ partícula ao jato mais próximo ou simplesmente juntar os dois jatos, baseando-se na fração
+ da quantidade de energia que o jato menos intenso que está na região de \emph{overlapping};
+ \item[IC-SD] aplicam o \emph{split and drop}, ou seja, ele não une jatos que dividem muita
+ energia em comum, mas simplesmente desconsideram os jatos menos intensos;
+ \item[SR] são uma classe de algoritmos que combinam partículas({\it Sequential Recombination}) em jatos baseando-se
+ em uma metrica pŕe-definida, que é o caso do {\it $k_T$ algorithm};
+\end{description}
+
+
